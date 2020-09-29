@@ -1,0 +1,24 @@
+n = int(input())
+numbers = []
+filtered = []
+
+for i in range(n):
+    number = int(input())
+    numbers.append(number)
+
+command = input()
+for x in range(len(numbers)):
+    if command == "even":
+        if (numbers[x]) % 2 == 0:
+            filtered.append(numbers[x])
+    if command == "odd":
+        if not (numbers[x]) % 2 == 0:
+            filtered.append(numbers[x])
+    if command == "negative":
+        if (numbers[x]) < 0:
+            filtered.append(numbers[x])
+    if command == "positive":
+        if (numbers[x]) >= 0:
+            filtered.append(numbers[x])
+
+print(filtered)
