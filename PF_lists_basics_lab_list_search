@@ -1,0 +1,11 @@
+number = int(input())
+word = input()
+word_found = []
+whole = []
+for i in range(number):
+    sentence = input()
+    whole.append(sentence)
+    if word in sentence:
+        word_found.append(sentence)
+print(whole)
+print(word_found)
